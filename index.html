@@ -1,36 +1,183 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,800">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="app.css">
-    <title>Hello, space!</title>
+    <link rel="stylesheet" href="css/app.css">
+    <title>12 namai</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+    <header>
+         <!--Navbar pradzia-->
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                <div class="container">                        
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        PAVADINIMAS
+                                    </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Apie mus</a>
+                                    <a class="dropdown-item" href="#">Veikla</a>
+                                    <a class="dropdown-item" href="#">Kontaktai</a>
+                                </div>
+                             </li>   
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hipnozė
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Kas yra hipnozė?</a>
+                                <a class="dropdown-item" href="#">Regresinė hipnozė</a>
+                                <a class="dropdown-item" href="#">Kam to reikia?</a>
+                                <a class="dropdown-item" href="#">Regresijos nauda</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Komanda
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Hipnozės operatoriai</a>
+                                <a class="dropdown-item" href="#">Telepatai</a>
+                                <a class="dropdown-item" href="#">Priemonės hipnozės seansui</a>
+                                <a class="dropdown-item" href="#">Apribojimai</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Apie seansą
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Straipsniai</a>
+                                <a class="dropdown-item" href="#">aaaaa</a>
+                                <a class="dropdown-item" href="#">bbbbbb</a>            
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                      <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Ieškoti" aria-label="Ieškoti">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Ieškoti" aria-label="Ieškoti">
+                      </div>
+                    </form>                    
+                  </div>
+                </div>
+            </nav>
+              <!--SLAPTAZODIS-->
+        <div class="container-fluid bg-info">
+            <div class="row"> 
+                <div class="col-3">
+                    <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
+<!-- The Login Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+                    </div>
+            </div>
+        </div>
+              
+              
+              <!-- Navbar pabaiga -->
+    </header>
+  
+        <div class="container">
+             <div class="row">
+                 <div class="p-2 content-column half text-dark col-lg-7">
+                    <h4 class="special-title">Kas yra hipnozė?</h4>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante.
+                        Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
+                   
+                    <p>&nbsp;</p>
+                    <h4 class="special-title">Regresinė hipnozė</h4>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante.
+
+                            Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
+                    <p>&nbsp;</p>
+                    <h4 class="special-title">Kam to reikia?</h4>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante.
+
+                            Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
+                    <p>&nbsp;</p>
+                    <h4 class="special-title">Regresijos nauda</h4>                                       
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante. Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
+                    </div>
+                    <div class="p-2 col-lg-4 ml-auto"><span><img src="./images/tinklas.jpg" class="rounded float-right" ></span></div>
+                </div>
+            </div>     
+   <!-- footeris-->
+   
+   <footer>
+    <div class="footer container-fluid text-white p-5">
+        <div class="row pt-4 pb-0">
+            <div class="col-12 col-md-4 px-5">
+                <h5 class="font-weight-bold">Susisiekite su mumis</h5>
+                <ul class="list-unstyled contacts">
+                    <li><i class="fas fa-phone"></i> +370 1111111</li>
+                    <li><i class="fas fa-envelope"></i> info@12namai.com</li>
+                    <li><i class="fas fa-home"></i> Svajonių g. 9, Miestas, Lietuva</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 pl-5 pr-4">
+                <h5 class="font-weight-bold">Apie mus</h5>
+                <p>Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna. Proin sed porta dui.</p>
+            </div>
+            <div class="col-12 col-md-4 px-5">
+                <h5 class="font-weight-bold">NAUJIENOS</h5>
+                <p>Gaukite naujienas pirmieji</p>
+                <div class="row col-12">
+                    <input type="email" class="rounded-0 border-right-0 form-control col-10" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    <button type="submit" class="btn border-left-0 rounded-right col-3 go-button">Pirmyn!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footerio pabaiga-->
+<a href="#" id="scroll-to-top" class="scroll-to-top displayed" title="Back To Top"><span class="up-arrow"></span></a>
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
- <script src="js/scripts.js"></script> 
+    <script src="js/scripts.js"></script> 
 </body>
 </html>
