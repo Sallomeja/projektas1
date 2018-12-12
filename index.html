@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,800">
@@ -15,7 +15,7 @@
   <body>
     <header>
          <!--Navbar pradzia-->
-         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar mb-25">
                 <div class="container">                        
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
                                 Hipnozė
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Kas yra hipnozė?</a>
+                                <a class="dropdown-item" href="#kasYraHipnoze">Kas yra hipnozė?</a>
                                 <a class="dropdown-item" href="#">Regresinė hipnozė</a>
                                 <a class="dropdown-item" href="#">Kam to reikia?</a>
                                 <a class="dropdown-item" href="#">Regresijos nauda</a>
@@ -69,81 +69,85 @@
                     <form class="form-inline">
                       <div class="md-form my-0">
                         <input class="form-control mr-sm-2" type="text" placeholder="Ieškoti" aria-label="Ieškoti">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Ieškoti" aria-label="Ieškoti">
+                        <input class="form-control mr-sm-2"  type="button" onclick="document.getElementById('id01').style.display='block'">Login</button>
+                        
                       </div>
                     </form>                    
                   </div>
                 </div>
             </nav>
               <!--SLAPTAZODIS-->
-        <div class="container-fluid bg-info">
-            <div class="row"> 
-                <div class="col-3">
+        
                     <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
 <!-- The Login Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
+                    <div id="id01" class="modal col-4">
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                    class="close" title="Close Modal">&times;</span>
 
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+                    <!-- Modal Content -->
+                    <form class="modal-content animate" action="/action_page.php">
+                        <div class="container">
+                        <label for="uname"><b>Vartotojo vardas</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Prisijungti</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Prisiminti mane
+                        </label>
+                        </div>
 
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+                        <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw"> <a href="#">Pamiršote slaptažodį?</a></span>
+                        </div>
+                    </form>
                     </div>
-            </div>
-        </div>
+                
               
               
               <!-- Navbar pabaiga -->
     </header>
   
-        <div class="container">
-             <div class="row">
-                 <div class="p-2 content-column half text-dark col-lg-7">
-                    <h4 class="special-title">Kas yra hipnozė?</h4>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante.
-                        Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
-                   
-                    <p>&nbsp;</p>
-                    <h4 class="special-title">Regresinė hipnozė</h4>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante.
-
-                            Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
-                    <p>&nbsp;</p>
-                    <h4 class="special-title">Kam to reikia?</h4>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante.
-
-                            Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
-                    <p>&nbsp;</p>
-                    <h4 class="special-title">Regresijos nauda</h4>                                       
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante. Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
+    <section>
+            <div class="inner">
+                
+                <div id="kasYraHipnoze">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h4>Kas yra hipnozė?</h4>
+                             <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./images/tinklas.jpg" class="rounded " >
+                        </div>
                     </div>
-                    <div class="p-2 col-lg-4 ml-auto"><span><img src="./images/tinklas.jpg" class="rounded float-right" ></span></div>
                 </div>
-            </div>     
+            <div> 
+
+                <h4>Regresinė hipnozė</h4>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. 
+                         Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
+                        <img src="./images/kanjonas.jpg" class="rounded " >
+            </div>
+            <div> 
+                <h4>Kam to reikia?</h4>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. SuspendisseProin sed porta dui.</p>
+                    <img src="./images/miskas.jpg">
+            
+            </div>
+
+            <div>
+            <h4 >Regresijos nauda</h4>                                       
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mi id porta mattis. Curabitur tellus nisi, dignissim in ipsum nec, dictum sodales enim. Fusce vel urna nulla. Nulla feugiat, nunc vel aliquet bibendum, neque magna cursus nulla, quis pulvinar enim turpis non quam. Nulla sodales, diam ac tincidunt maximus, diam nunc interdum ligula, nec dapibus libero lorem ornare orci. Ut iaculis libero sed turpis suscipit, id congue velit tristique. Cras maximus eleifend mi, quis sagittis leo feugiat at. Sed dapibus quam sit amet dolor aliquam tincidunt. Suspendisse scelerisque sem ante, finibus consectetur nulla dignissim nec. Praesent risus elit, finibus iaculis dapibus id, ultricies nec ante.
+                    Proin ligula diam, varius id diam ac, rutrum malesuada orci. Suspendisse interdum convallis sodales. Maecenas eget vestibulum elit, at fermentum lectus. Fusce vehicula nunc sed turpis cursus, ultricies sollicitudin eros placerat. Donec vitae diam aliquet metus iaculis rhoncus quis in ipsum. Etiam ornare est mattis mauris placerat, ac egestas nulla dignissim. Morbi placerat, ipsum id malesuada blandit, justo lacus tristique magna, ullamcorper congue eros dolor id sapien. Sed tincidunt turpis ac tristique interdum. Proin sed porta dui.</p>
+                <img src="./images/gele.jpg" class="rounded " >
+             </div>
+         </div>          
+        </section>    
    <!-- footeris-->
    
    <footer>

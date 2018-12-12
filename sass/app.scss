@@ -1,5 +1,5 @@
 body {
-    color: rgb(133, 87, 87);
+    background-color: rgba(143, 88, 88, 0.5);
     font-family: 'Lora', serif;
   
 }
@@ -10,13 +10,27 @@ header,
 .view {
   height: 90%;
 }
-
+.container .navbar {
+background-color: rgb(118, 148, 233);
+}
 header {
     background: url('../images/debesys.jpg');
     background-size: cover;
 }
+section .inner img {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+section h4  {
+  display: inline-block;
+  line-height: 1.5;
+}
+
 footer {
-  background-color: rgb(50, 108, 231);
+  background-color: rgb(108, 145, 224);
 }
 
 
@@ -30,7 +44,7 @@ footer {
 }
 
 .top-nav-collapse {
-  background-color: #78909c !important;
+  background-color: #376277 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
