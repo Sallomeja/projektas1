@@ -10,9 +10,7 @@ header,
 .view {
   height: 90%;
 }
-.container .navbar {
-background-color: rgb(118, 148, 233);
-}
+
 header {
     background: url('../images/debesys.jpg');
     background-size: cover;
@@ -36,6 +34,7 @@ section h4  {
   line-height: 1.5;
 }
 
+
 footer {
   background-image: url(../images/universe.jpg);
   background-size: cover;
@@ -44,27 +43,31 @@ footer {
 }
  footer .futerioApacia {
    margin-top: 20px;
-   border-top: 1px 0px rgba(56, 56, 75, 0.932);
+   border-top: 1px 0px red;
    padding: 10px 0px;
    overflow: auto;
  }
  footer .futerioApacia .kairePuse {
-   display: inline-block;
+   display: block;
    line-height: 25px;
  }
  footer .futerioApacia .kairePuse img {
  height: 30px;
  width: auto;
- margin-left: 5px;
+ justify-content: center;
  }
  footer .futerioApacia .desinePuse {
    float: right;
    display: flex;
+   background-color: #fefefe;
+   padding-top: 10px;
+   line-height: 2;
  }
- footer .futerioApacia .desinePuse img{
+ footer .desinePuse img{
    height: 40px;
    width: auto;
-   margin-left: 150px;
+   margin-left: 10px;
+   
  }
 
 @media (max-width: 740px) {
@@ -80,9 +83,7 @@ footer {
   background-color: #376277 !important;
 }
 
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
+
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
