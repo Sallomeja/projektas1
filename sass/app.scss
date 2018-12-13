@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(143, 88, 88, 0.5);
+    background-color: rgba(143, 88, 88, 0.363);
     font-family: 'Lora', serif;
   
 }
@@ -16,9 +16,16 @@ background-color: rgb(118, 148, 233);
 header {
     background: url('../images/debesys.jpg');
     background-size: cover;
-}
+   }
 section .inner img {
   width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+section .inner2 img {
+  width: 150px;
   height: auto;
   margin-bottom: 20px;
   margin-top: 25px;
@@ -30,9 +37,35 @@ section h4  {
 }
 
 footer {
-  background-color: rgb(108, 145, 224);
+  background-image: url(../images/universe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
+ footer .futerioApacia {
+   margin-top: 20px;
+   border-top: 1px 0px rgba(56, 56, 75, 0.932);
+   padding: 10px 0px;
+   overflow: auto;
+ }
+ footer .futerioApacia .kairePuse {
+   display: inline-block;
+   line-height: 25px;
+ }
+ footer .futerioApacia .kairePuse img {
+ height: 30px;
+ width: auto;
+ margin-left: 5px;
+ }
+ footer .futerioApacia .desinePuse {
+   float: right;
+   display: flex;
+ }
+ footer .futerioApacia .desinePuse img{
+   height: 40px;
+   width: auto;
+   margin-left: 150px;
+ }
 
 @media (max-width: 740px) {
   html,
